@@ -1,0 +1,39 @@
+{
+  "author": "Gianluca Guarini https://github.com/GianlucaGuarini",
+  "bugs": {
+    "url": "https://github.com/gianlucaguarini/immutable-dom/issues"
+  },
+  "files": [
+    "src",
+    "immutable-dom.js"
+  ],
+  "dependencies": {},
+  "description": "Lock any HTML DOM node",
+  "devDependencies": {
+    "@gianlucaguarini/eslint-config": "^2.0.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.14.0",
+    "esm": "^3.2.25",
+    "mocha": "^8.2.1",
+    "rollup": "^2.33.3"
+  },
+  "peerDependencies": {},
+  "homepage": "https://github.com/gianlucaguarini/immutable-dom#readme",
+  "license": "MIT",
+  "main": "immutable-dom.js",
+  "module": "src/index.js",
+  "name": "immutable-dom",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gianlucaguarini/immutable-dom.git"
+  },
+  "scripts": {
+    "lint": "eslint src test",
+    "build": "rollup -c",
+    "pretest": "npm run build",
+    "test": "npm run lint && mocha -r esm test",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "version": "0.0.0"
+}
