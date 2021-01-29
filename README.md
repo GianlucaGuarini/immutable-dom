@@ -23,11 +23,13 @@ npm i immutable-dom
 import {lock} from 'immutable-dom'
 
 // your application html can be no longer modified
-const unlock = lock(document.getElementById('app'))
+const unlock = lock(document.documentElement)
 
 // unlock your application
 unlock()
 ```
+
+[Check the demo](https://plnkr.co/edit/rjaeeMWr1vlIY4mI?open=lib%2Fscript.js)
 
 ## TODO
 
