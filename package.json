@@ -8,7 +8,7 @@
     "immutable-dom.js"
   ],
   "dependencies": {},
-  "description": "Lock any HTML DOM node",
+  "description": "Lock any HTML DOM Element 🔐",
   "devDependencies": {
     "@gianlucaguarini/eslint-config": "^2.0.0",
     "chai": "^4.2.0",
