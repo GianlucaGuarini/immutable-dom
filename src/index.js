@@ -42,7 +42,7 @@ export function lock(node) {
   // start observing the changes
   observer.observe(node, config)
   // store the disconnect method as static method of the callback function
-  callback.disconnect = observer.disconnect
+  callback.disconnect = observer.disconnect.bind(observer)
 
   return disconnect
 }
