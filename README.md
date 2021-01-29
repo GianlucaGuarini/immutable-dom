@@ -1,11 +1,13 @@
 # immutable-dom
 
 Lock any HTML DOM Element 🔐
+This script detects attempts to modify your HTML structure and content. 
+It disables changes from internal or external sources (like Devtools).
 
 ## Motivation
 
 Your Application HTML can be [modified by scammers](https://www.youtube.com/watch?v=R1etkjUN6Ak) or third party scripts.
-This simple script attempts to lock safely your application HTML making it immutable.
+I wanted to create simple script that locks safely your application HTML making it immutable.
 
 ## Installation
 
