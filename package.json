@@ -35,5 +35,5 @@
     "test": "npm run lint && mocha -r esm test",
     "prepublishOnly": "npm run build && npm run test"
   },
-  "version": "0.0.2"
+  "version": "0.1.0"
 }
